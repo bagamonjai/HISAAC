@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <title> Responsive Contact Us Form  | CodingLab </title>
-    <link rel="stylesheet" href="contact.css">
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--Navigation bar-->
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-   </head>
+<head>
+  <meta charset="UTF-8">
+  <title> Responsive Contact Us Form | CodingLab </title>
+  <link rel="stylesheet" href="contact.css">
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Navigation bar-->
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+</head>
+
 <body>
   <!--Navigation bar-->
-<div id="nav-placeholder">
+  <div id="menu">
 
-</div>
+  </div>
 
-<script>
-$(function(){
-  $("#nav-placeholder").load("menu.html");
-});
-</script>
-<!--end of Navigation bar-->
+  <script>
+    $(function () {
+      $("#footer").load("footer.html");
+      $("#menu").load("menu.html");
+    });
+  </script>
+
+  <!--end of Navigation bar-->
 
   <div class="container">
     <div class="content">
@@ -50,23 +54,24 @@ $(function(){
       <div class="right-side">
         <div class="topic-text">請給我們留言</div>
         <p>有什麼問題請聯絡我們</p>
-      <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="你的名字">
-        </div>
-        <div class="input-box">
-          <input type="text" placeholder="你的電郵">
-        </div>
-        <div class="input-box message-box">
-          <textarea placeholder="你的留言"></textarea>
-        </div>
-        <div class="button">
-          <input type="button" value="立刻傳送" >
-        </div>
-      </form>
-    </div>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="你的名字">
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="你的電郵">
+          </div>
+          <div class="input-box message-box">
+            <textarea placeholder="你的留言"></textarea>
+          </div>
+          <div class="button">
+            <input type="button" value="立刻傳送">
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-
+  <div id="footer"></div>
 </body>
+
 </html>
