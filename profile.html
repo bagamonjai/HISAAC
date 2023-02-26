@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Profile Cards | CodingLab</title>
+    <link rel="stylesheet" href="profile.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  </head>
+              <!-- Creating By CodingLab -->
+  <body>
+
+    <div id="menu">
+
+    </div>
+    
+    <script>
+      $(function () {
+        $("#footer").load("footer.html");
+        $("#menu").load("menu.html");
+      });
+    </script>
+
+    <div class="container">
+      <div class="box">
+      <div class="image">
+          <img src="/images/profile/Hilda.jpg">
+        </div>
+        <div class="name_job">Hilda Tsang</div>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p> 專業老師</p>
+        <div class="btns">
+          <button>Readmore</button>
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="/images/profile/Isaac.jpg" alt="">
+        </div>
+        <div class="name_job">Isaac FUNG</div>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>graduating from CUHK majoring in Professional Accountancy.   </p>
+        <div class="btns">
+          <button>Read More </button>
+          <button>Subscribe</button>
+        </div>
+      </div>
+  
+      </div>
+    </div>
+    <div id="footer"></div>
+      </body>
+</html>
