@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Love for You</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+      }
+      h1 {
+        font-size: 36px;
+        color: #d83f87;
+        text-align: center;
+        margin-top: 50px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.5;
+        color: #333;
+        margin: 20px 0;
+        text-align: justify;
+        padding: 0 20px;
+      }
+      .signature {
+        font-size: 24px;
+        font-style: italic;
+        color: #d83f87;
+        text-align: right;
+        margin-top: 50px;
+        margin-right: 20px;
+      }
+      button {
+        background-color: #d83f87;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        margin-top: 50px;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #fff;
+        color: #d83f87;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>To My Dearest [Girlfriend's Name],</h1>
+    <p>I wanted to take a moment to express my love for you. You are the most important person in my life, and I am so grateful for your love and support.</p>
+    <p>Every moment spent with you is a treasure, and I cherish each memory we've made together. Your smile brightens my day and your laughter fills my heart with joy.</p>
+    <p>I promise to always be there for you, through thick and thin. I will support you, encourage you, and love you unconditionally.</p>
+    <p>[Girlfriend's Name], you are my soulmate, my partner, and my best friend. I love you more than words can express, and I can't wait to spend the rest of my life with you.</p>
+    <button onclick="sendMessage()">Send me a message</button>
+    <p class="signature">Forever and always,<br>[Your Name]</p>
+    <script>
+      function sendMessage() {
+        var message = prompt("Please enter your message:");
+        if (message != null && message.trim() != "") {
+          alert("Thank you for your message: " + message);
+        }
+      }
+    </script>
+  </body>
+</html>
