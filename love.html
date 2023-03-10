@@ -45,6 +45,39 @@
         background-color: #fff;
         color: #d83f87;
       }
+      		#love-meter {
+			margin: 50px auto;
+			text-align: center;
+		}
+		#love-meter input[type="range"] {
+			width: 300px;
+			margin-bottom: 20px;
+			-webkit-appearance: none;
+			background-color: #f2f2f2;
+			height: 10px;
+			border-radius: 5px;
+			outline: none;
+			opacity: 0.7;
+			-webkit-transition: .2s;
+			transition: opacity .2s;
+		}
+		#love-meter input[type="range"]::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			appearance: none;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: #eac6f3;
+			cursor: pointer;
+		}
+		#love-meter input[type="range"]::-moz-range-thumb {
+			width: 20px;
+			height: 20px;
+			border: 0;
+			border-radius: 50%;
+			background-color: #eac6f3;
+			cursor: pointer;
+		}
     </style>
   </head>
   <body>
@@ -54,13 +87,38 @@
     <p>I promise to always be there for you, through thick and thin. I will support you, encourage you, and love you unconditionally.</p>
     <p>KEIKEI, you are my soulmate, my partner, and my best friend. I love you more than words can express, and I can't wait to spend the rest of my life with you.</p>
     
+    
+    	<div id="love-meter">
+		<h2>How Much Do you Love me?</h2>
+        <input type="range" min="0" max="100" value="0" id="love-range">
+        <p id="love-value">0%</p>
+        <button id="love-button">Calculate Love</button>
+    </div>
+    
+    <script>
+        // Selecting the love meter elements
+        const loveRange = document.querySelector('#love-range');
+        const loveValue = document.querySelector('#love-value');
+        const loveButton = document.querySelector('#love-button');
+        
+        // Function to calculate the love percentage
+        function calculateLove() {
+            const lovePercentage = loveRange.value;
+            loveValue.textContent = `${lovePercentage}%`;
+        }
+        
+        // Event listener for the love meter button
+        loveButton.addEventListener('click', calculateLove);
+    
+    
+    
     <form
   action="https://formspree.io/f/xdovdakv"
   method="POST"
 >
   <label>
-    Your message:
-    <textarea name="message"></textarea>
+    type the result and send to me:
+    <textarea name="message"></text>
   </label>
   <!-- your other form fields go here -->
       <button type="submit">Send me a message</button>
