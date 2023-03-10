@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Love for You</title>
+    <title>My Love for KEIKEI</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -53,15 +53,22 @@
     <p>Every moment spent with you is a treasure, and I cherish each memory we've made together. Your smile brightens my day and your laughter fills my heart with joy.</p>
     <p>I promise to always be there for you, through thick and thin. I will support you, encourage you, and love you unconditionally.</p>
     <p>KEIKEI, you are my soulmate, my partner, and my best friend. I love you more than words can express, and I can't wait to spend the rest of my life with you.</p>
-    <button onclick="sendMessage()">Send me a message</button>
-    <p class="signature">Forever and always,<br>Saac Saac</p>
-    <script>
-      function sendMessage() {
-        var message = prompt("Please enter your message:");
-        if (message != null && message.trim() != "") {
-          alert("Thank you for your message: " + message);
-        }
-      }
-    </script>
+    
+    <form
+  action="https://formspree.io/f/xdovdakv"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+      <button type="submit">Send me a message</button>
+    </form>
+    <p class="signature">Forever and always,<br>[Saac Saac]</p>
   </body>
 </html>
