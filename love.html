@@ -1,128 +1,139 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>My Love for KEIKEI</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f9f9f9;
-      }
-      h1 {
-        font-size: 36px;
-        color: #d83f87;
-        text-align: center;
-        margin-top: 50px;
-      }
-      p {
-        font-size: 20px;
-        line-height: 1.5;
-        color: #333;
-        margin: 20px 0;
-        text-align: justify;
-        padding: 0 20px;
-      }
-      .signature {
-        font-size: 24px;
-        font-style: italic;
-        color: #d83f87;
-        text-align: right;
-        margin-top: 50px;
-        margin-right: 20px;
-      }
-      button {
-        background-color: #d83f87;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        font-size: 18px;
-        border-radius: 5px;
-        margin-top: 50px;
-        margin-left: 20px;
-        cursor: pointer;
-      }
-      button:hover {
-        background-color: #fff;
-        color: #d83f87;
-      }
-      		#love-meter {
-			margin: 50px auto;
-			text-align: center;
-		}
-		#love-meter input[type="range"] {
-			width: 300px;
-			margin-bottom: 20px;
-			-webkit-appearance: none;
-			background-color: #f2f2f2;
-			height: 10px;
-			border-radius: 5px;
-			outline: none;
-			opacity: 0.7;
-			-webkit-transition: .2s;
-			transition: opacity .2s;
-		}
-		#love-meter input[type="range"]::-webkit-slider-thumb {
-			-webkit-appearance: none;
-			appearance: none;
-			width: 20px;
-			height: 20px;
-			border-radius: 50%;
-			background-color: #eac6f3;
-			cursor: pointer;
-		}
-		#love-meter input[type="range"]::-moz-range-thumb {
-			width: 20px;
-			height: 20px;
-			border: 0;
-			border-radius: 50%;
-			background-color: #eac6f3;
-			cursor: pointer;
-		}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #d83f87;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #333;
+            margin: 20px 0;
+            text-align: justify;
+            padding: 0 20px;
+        }
+
+        .signature {
+            font-size: 24px;
+            font-style: italic;
+            color: #d83f87;
+            text-align: right;
+            margin-top: 50px;
+            margin-right: 20px;
+        }
+
+        button {
+            background-color: #d83f87;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 50px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #fff;
+            color: #d83f87;
+        }
+
+        #love-meter {
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        #love-meter input[type="range"] {
+            width: 300px;
+            margin-bottom: 20px;
+            -webkit-appearance: none;
+            background-color: #f2f2f2;
+            height: 10px;
+            border-radius: 5px;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        #love-meter input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #eac6f3;
+            cursor: pointer;
+        }
+
+        #love-meter input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border: 0;
+            border-radius: 50%;
+            background-color: #eac6f3;
+            cursor: pointer;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <h1>To My Dearest KEIKEI,</h1>
-    <p>I wanted to take a moment to express my love for you. You are the most important person in my life, and I am so grateful for your love and support.</p>
-    <p>Every moment spent with you is a treasure, and I cherish each memory we've made together. Your smile brightens my day and your laughter fills my heart with joy.</p>
-    <p>I promise to always be there for you, through thick and thin. I will support you, encourage you, and love you unconditionally.</p>
-    <p>KEIKEI, you are my soulmate, my partner, and my best friend. I love you more than words can express, and I can't wait to spend the rest of my life with you.</p>
-    
-    
-    	<div id="love-meter">
-		<h2>How Much Do you Love me?</h2>
+    <p>I wanted to take a moment to express my love for you. You are the most important person in my life, and I am so
+        grateful for your love and support.</p>
+    <p>Every moment spent with you is a treasure, and I cherish each memory we've made together. Your smile brightens my
+        day and your laughter fills my heart with joy.</p>
+    <p>I promise to always be there for you, through thick and thin. I will support you, encourage you, and love you
+        unconditionally.</p>
+    <p>KEIKEI, you are my soulmate, my partner, and my best friend. I love you more than words can express, and I can't
+        wait to spend the rest of my life with you.</p>
+
+
+    <div id="love-meter">
+        <h2>How Much Do you Love me?</h2>
         <input type="range" min="0" max="100" value="0" id="love-range">
         <p id="love-value">0%</p>
         <button id="love-button">Calculate Love</button>
     </div>
-    
+
     <script>
         // Selecting the love meter elements
         const loveRange = document.querySelector('#love-range');
         const loveValue = document.querySelector('#love-value');
         const loveButton = document.querySelector('#love-button');
-        
+
         // Function to calculate the love percentage
         function calculateLove() {
             const lovePercentage = loveRange.value;
             loveValue.textContent = `${lovePercentage}%`;
         }
-        
+
         // Event listener for the love meter button
         loveButton.addEventListener('click', calculateLove);
-    
-    
-    
-    <form
-  action="https://formspree.io/f/xdovdakv"
-  method="POST"
->
-  <label>
-    type the result and send to me:
-    <textarea name="message"></text>
-  </label>
-  <!-- your other form fields go here -->
-      <button type="submit">Send me a message</button>
+    </script>
+    <form action="https://formspree.io/f/xdovdakv" method="POST">
+        <label>
+            type the result and send to me:
+            <textarea name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send me a message</button>
     </form>
     <p class="signature">Forever and always,<br>[Saac Saac]</p>
-  </body>
+</body>
+
 </html>
